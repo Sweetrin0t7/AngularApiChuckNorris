@@ -1,0 +1,18 @@
+<section>
+  <app-header></app-header>
+  <div class="container">
+
+      <div class="container-img">
+        <img class="imagem" src="../../assets/img/img.png" alt="Logo">
+      </div>
+
+      <div class="carregar-piada">
+        <ul>
+          <p class="p" *ngFor="let joke of jokes">{{ joke.value }}</p>
+        </ul>
+        <button (click)="getJokes()">Carregar Piadas</button>
+      </div>
+
+  </div>
+  <app-footer></app-footer>
+</section>
